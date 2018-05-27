@@ -1,0 +1,41 @@
+Failed running "D:\Programs\Unity\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\Emscripten_Win\python\2.7.5.3_64bit\python.exe" "D:\Programs\Unity\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\Emscripten\emcc" @"D:\Jefferson\Documents\Programming\git\CastleAttack\Assets\..\Temp\emcc_arguments.resp"
+
+stdout:
+stderr:WARNING:root:--separate-asm works best when compiling to HTML. otherwise, you must yourself load the '.asm.js' file that is emitted separately, and must do so before loading the main '.js` file
+
+D:\Programs\Unity\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\Emscripten\tools\eliminator\node_modules\uglify-js\lib\parse-js.js:272
+        throw new JS_Parse_Error(message, line, col, pos);
+        ^
+TypeError: (intermediate value) is not a function
+    at new JS_Parse_Error (D:\Programs\Unity\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\Emscripten\tools\eliminator\node_modules\uglify-js\lib\parse-js.js:261:21)
+    at js_error (D:\Programs\Unity\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\Emscripten\tools\eliminator\node_modules\uglify-js\lib\parse-js.js:272:15)
+    at croak (D:\Programs\Unity\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\Emscripten\tools\eliminator\node_modules\uglify-js\lib\parse-js.js:742:17)
+    at token_error (D:\Programs\Unity\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\Emscripten\tools\eliminator\node_modules\uglify-js\lib\parse-js.js:749:17)
+    at unexpected (D:\Programs\Unity\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\Emscripten\tools\eliminator\node_modules\uglify-js\lib\parse-js.js:755:17)
+    at Object.semicolon (D:\Programs\Unity\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\Emscripten\tools\eliminator\node_modules\uglify-js\lib\parse-js.js:775:51)
+    at prog1 (D:\Programs\Unity\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\Emscripten\tools\eliminator\node_modules\uglify-js\lib\parse-js.js:1314:29)
+    at simple_statement (D:\Programs\Unity\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\Emscripten\tools\eliminator\node_modules\uglify-js\lib\parse-js.js:906:35)
+    at D:\Programs\Unity\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\Emscripten\tools\eliminator\node_modules\uglify-js\lib\parse-js.js:816:35
+    at block_ (D:\Programs\Unity\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\Emscripten\tools\eliminator\node_modules\uglify-js\lib\parse-js.js:999:32)
+wrote symbol map file to D:\Jefferson\Documents\Programming\git\CastleAttack\Temp\StagingArea\Data\linkresult_asm\build.js.symbols
+Traceback (most recent call last):
+  File "D:\Programs\Unity\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\Emscripten\emcc", line 13, in <module>
+    emcc.run()
+  File "D:\Programs\Unity\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\Emscripten\emcc.py", line 1972, in run
+    JSOptimizer.flush()
+  File "D:\Programs\Unity\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\Emscripten\emcc.py", line 1868, in flush
+    run_passes(chunks[0], title, just_split=False, just_concat=False)
+  File "D:\Programs\Unity\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\Emscripten\emcc.py", line 1841, in run_passes
+    final = shared.Building.js_optimizer(final, passes, debug_level >= 4, JSOptimizer.extra_info, just_split=just_split, just_concat=just_concat)
+  File "D:\Programs\Unity\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\Emscripten\tools\shared.py", line 1840, in js_optimizer
+    ret = js_optimizer.run(filename, passes, NODE_JS, debug, extra_info, just_split, just_concat)
+  File "D:\Programs\Unity\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\Emscripten\tools\js_optimizer.py", line 559, in run
+    return temp_files.run_and_clean(lambda: run_on_js(filename, passes, js_engine, source_map, extra_info, just_split, just_concat))
+  File "D:\Programs\Unity\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\Emscripten\tools\tempfiles.py", line 78, in run_and_clean
+    return func()
+  File "D:\Programs\Unity\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\Emscripten\tools\js_optimizer.py", line 559, in <lambda>
+    return temp_files.run_and_clean(lambda: run_on_js(filename, passes, js_engine, source_map, extra_info, just_split, just_concat))
+  File "D:\Programs\Unity\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\Emscripten\tools\js_optimizer.py", line 501, in run_on_js
+    assert proc.returncode == 0
+AssertionError
+UnityEditor.BuildPlayerWindow:BuildPlayerAndRun()

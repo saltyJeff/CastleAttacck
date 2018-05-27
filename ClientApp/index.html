@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://simplewebrtc.com/latest-v3.js"></script>
+</head>
+
+<body style="background-color: red">
+    <div id="gameIntro">
+        <h1>Game room: <input type="text" id="gameRoom" value="CODEDAY"/></h1>
+        <button id="joinButton">Join Room</button>
+    </div>
+    <div id="gameView">
+        <h1>I have no money</h1>
+        <div class="spawnRow">
+            <button class="spawnButton selected">DRILL</button>
+            <button class="spawnButton">SENTRY</button>
+            <button class="spawnButton">PEASHOOTER</button>
+            <button class="spawnButton">CHERRYBOMB</button>
+        </div>
+        <div class="rowRow">
+            <button class="rowButton">0</button>
+            <button class="rowButton">1</button>
+            <button class="rowButton">2</button>
+            <button class="rowButton">3</button>
+            <button class="rowButton">4</button>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="intro.js"></script>
+    <script src="game.js"></script>
+</body>
+
+</html>
